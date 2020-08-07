@@ -1,0 +1,66 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #212121;
+}
+
+.sidenav {
+    font-weight: bold;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #91DDDA;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: .3s ease-in-out;
+}
+
+.sidenav a {
+    padding-top: 20px;
+    padding: 13px 13px 13px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav img {
+    margin: 6px 8px 4px 35px;
+    height: 80px;
+    width: 80px;
+}
+
+.sidenav a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.main {
+    margin-left: 150px; /* Same as the width of the sidenav */
+}
+
+.style-nav {
+    background-color: #070707;
+}
+
+.style-nav a {
+    color: #B3B3B3;
+}
+
+
+
+.song-table {
+    color: aliceblue;
+}
+.cust-card {
+    background-color: #121616;
+}
+
+#Button1 {
+    margin:10px;
+}

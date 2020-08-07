@@ -1,0 +1,103 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/wall.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 560px;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+
+.signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 370px;
+    height: 650px;
+    padding: 100px 60px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    position: absolute;
+}
+
+h2 {
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #ffd909;
+}
+
+.lblemail, .lblpass {
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.txtemail, .txtpass, .btnsubmit, .txtfname, .txtlname {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.txtemail, .txtpass, .txtfname, .txtlname {
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: 3px;
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.btnsubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(255,9,9,0);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    color: azure;
+}
+
+    .btnsubmit:hover {
+        background-color: rgb(255,217,9);
+        color: black;
+    }

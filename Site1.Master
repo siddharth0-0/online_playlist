@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="first_sharp.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Music Application</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="mainStyle.css" rel="stylesheet" />
+
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="favicon (1).ico" rel="icon" type="image/x-icon" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="main">
+            <nav class="navbar navbar-expand-lg navbar-inverse style-nav">
+                <a class="navbar-brand" href="home.aspx">Online Playlist</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <asp:Label ID="Label1" class="nav-link active" runat="server" Text="User" ForeColor="#49BBBA" Font-Bold="True"></asp:Label>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Log out</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="sidenav">
+            <img src="images/sound-waves.png" />
+            <a href="home.aspx">Home</a>
+            <a href="songs.aspx">Songs</a>
+            <a href="playlist.aspx">Playlist</a>
+            <a href="subscription.aspx">Subscription</a>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
